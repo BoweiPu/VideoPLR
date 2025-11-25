@@ -6,7 +6,7 @@
 
 <sup>1</sup>University of Science and Technology of China (USTC)
 
-[[📄 Paper](https://arxiv.org/abs/2511.18463)] [[🤗 Model](https://huggingface.co/)] [[📚 Dataset](https://huggingface.co/)] [[🚀 Demo](https://huggingface.co/spaces/)]
+[[📄 Paper](https://arxiv.org/abs/2511.18463)] [[🤗 Model](https://huggingface.co/collections/pbwpbw/video-pl/)] [[📚 Dataset](https://huggingface.co/)] [[🚀 Demo](https://huggingface.co/spaces/)]
 
 </div>
 
