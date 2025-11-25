@@ -40,7 +40,7 @@ To address this, we introduce **VideoPLR**, a novel framework that integrates a 
 <div align="center">
 
 Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding
-Bowei Pu<sup>1</sup>, Chuanbin Liu<sup>1</sup>, Yifan Ge<sup>1</sup>, Peichen Zhou<sup>1</sup>, Yiwei Sun<sup>1</sup>, Zhiyin Lu<sup>1</sup>, Jiankang Wang<sup>1</sup>, Hongtao Xie<sup>1</sup>
+Bowei Pu<sup>1</sup>, Chuanbin Liu<sup>1</sup>, Yifan Ge<sup>1</sup>, Peicheng Zhou<sup>1</sup>, Yiwei Sun<sup>1</sup>, Zhiying Lu<sup>1</sup>, Jiankang Wang<sup>1</sup>, Hongtao Xie<sup>1</sup>
 
 <sup>1</sup>University of Science and Technology of China (USTC)
 
