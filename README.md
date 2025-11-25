@@ -98,7 +98,7 @@ If you find our paper or code useful, please cite:
 ```bibtex
 @misc{pu2025alternatingperceptionreasoninghallucinationresistantvideo,
       title={Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding}, 
-      author={Bowei Pu and Chuanbin Liu and Yifan Ge and Peichen Zhou and Yiwei Sun and Zhiyin Lu and Jiankang Wang and Hongtao Xie},
+      author={Bowei Pu and Chuanbin Liu and Yifan Ge and Peicheng Zhou and Yiwei Sun and Zhiying Lu and Jiankang Wang and Hongtao Xie},
       year={2025},
       eprint={2511.18463},
       archivePrefix={arXiv},
