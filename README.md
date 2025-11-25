@@ -35,7 +35,7 @@ To address this, we introduce **VideoPLR**, a novel framework that integrates a 
 3.  **State-of-the-Art Performance:** VideoPLR achieves SOTA results on 7 benchmarks (including Video-Holmes, MMVU, and VideoMME) at both 3B and 7B parameter scales, demonstrating superior data efficiency.
 
 ---
-#  ✨ Magic Prompt
+##  ✨ Magic Prompt
 Use it after the question text!
 ```python
 The assistant first briefly thinks through the reasoning process with evidence and then provides the user with the answer.
