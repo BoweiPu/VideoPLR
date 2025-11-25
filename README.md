@@ -35,46 +35,10 @@ To address this, we introduce **VideoPLR**, a novel framework that integrates a 
 3.  **State-of-the-Art Performance:** VideoPLR achieves SOTA results on 7 benchmarks (including Video-Holmes, MMVU, and VideoMME) at both 3B and 7B parameter scales, demonstrating superior data efficiency.
 
 ---
-好的，已经把所有的 🚩 替换成了更合适的图标（例如 🔥 News 和 ✨ Magic Prompt）。你可以直接复制下面这个优化后的版本：
-
-<div align="center">
-
-Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding
-Bowei Pu<sup>1</sup>, Chuanbin Liu<sup>1</sup>, Yifan Ge<sup>1</sup>, Peicheng Zhou<sup>1</sup>, Yiwei Sun<sup>1</sup>, Zhiying Lu<sup>1</sup>, Jiankang Wang<sup>1</sup>, Hongtao Xie<sup>1</sup>
-
-<sup>1</sup>University of Science and Technology of China (USTC)
-
-[📄 Paper] [🤗 Model] [📚 Dataset] [🚀 Demo]
-
-</div>
-
-🔥 News & TODO List
-[x] Upload paper to arXiv.
-
-[ ] Release SFT data to HuggingFace.
-
-[x] Release trained models.
-
-[ ] Create a model demo on HuggingFace Spaces.
-
-[ ] Release training code (based on ms-swift).
-
-[ ] Finding a home for the paper (Accepted by a conference 🙏).
-
-📖 Introduction & Advantages
-Existing Video Large Language Models (VideoLLMs) often suffer from perception shortcuts and hallucinations due to a flawed single-step perception paradigm. They tend to describe the video once and then reason, leading to insufficient evidence and lost details.
-
-To address this, we introduce VideoPLR, a novel framework that integrates a loop-based paradigm with an anti-hallucination reward.
-
-Key Advantages:
-Perception Loop Reasoning (PLR) Paradigm: Unlike traditional "Think-then-Answer" models, VideoPLR explicitly decouples perception and reasoning. The model iteratively perceives video segments, analyzes the evidence, and autonomously decides whether to re-perceive or conclude.
-
-Anti-Hallucination Mechanism: We introduce the Factual-Aware Evaluator (FAE), a reward model that evaluates the consistency between text descriptions and video content to prevent hallucinations during Reinforcement Learning (RL).
-
-State-of-the-Art Performance: VideoPLR achieves SOTA results on 7 benchmarks (including Video-Holmes, MMVU, and VideoMME) at both 3B and 7B parameter scales, demonstrating superior data efficiency.
-
-✨ Magic Prompt
-```The assistant first briefly thinks through the reasoning process with evidence and then provides the user with the answer.
+#  ✨ Magic Prompt
+Use it after the question text!
+```python
+The assistant first briefly thinks through the reasoning process with evidence and then provides the user with the answer.
 Within the <think></think> tags, the assistant provides reasoning with structured visual evidence: <start="t1", end="t2", desc="briefly explains the evidence">.
 The assistant should iteratively find visual evidence, evaluate whether it is sufficient to answer the question, and conclude the thinking process after multiple loops. Then, provide the answer within the <answer></answer> tags.
 ```
