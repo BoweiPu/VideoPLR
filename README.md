@@ -14,7 +14,7 @@
 
 - [x] Upload paper to arXiv.
 - [ ] Release SFT data to HuggingFace.
-- [ ] Release trained models.
+- [x] Release trained models.
 - [ ] Create a model demo on HuggingFace Spaces.
 - [ ] Release training code (based on ms-swift).
 - [ ] Finding a home for the paper (Accepted by a conference 🙏).
@@ -81,8 +81,7 @@ VideoPLR is built upon **Qwen2.5-VL** and trained using **Group Relative Policy 
 
 We would like to sincerely thank the **ms-swift** team for their excellent training framework.
 
-> **[modelscope/ms-swift](https://github.com/modelscope/ms-swift)**: Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 500+ LLMs (Qwen3, Qwen3-MoE, Llama4, GLM4.5, InternLM3, DeepSeek-R1, ...) and 200+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, Llava, GLM4v, Phi4, ...) (AAAI 2025).
-
+> **[modelscope/ms-swift](https://github.com/modelscope/ms-swift)**
 ---
 
 ## ✏️ Citation
