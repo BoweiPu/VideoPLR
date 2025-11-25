@@ -1,16 +1,12 @@
-
-
 <div align="center">
 
+# Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding
 
-
-**Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding**
-
-Bowei Pu<sup>1</sup>, Chuanbin Liu<sup>1</sup>, Yifan Ge<sup>1</sup>, Peichen Zhou<sup>1</sup>, Yiwei Sun<sup>1</sup>, Zhiyin Lu<sup>1</sup>, Jiankang Wang<sup>1</sup>, Hongtao Xie<sup>1</sup>
+**Bowei Pu**<sup>1</sup>, **Chuanbin Liu**<sup>1</sup>, **Yifan Ge**<sup>1</sup>, **Peichen Zhou**<sup>1</sup>, **Yiwei Sun**<sup>1</sup>, **Zhiyin Lu**<sup>1</sup>, **Jiankang Wang**<sup>1</sup>, **Hongtao Xie**<sup>1</sup>
 
 <sup>1</sup>University of Science and Technology of China (USTC)
 
-[[Paper](https://arxiv.org/abs/2025.xxxx)] [[Model (HuggingFace)](https://huggingface.co/)] [[Dataset](https://huggingface.co/)] [[Demo](https://huggingface.co/spaces/)]
+[[📄 Paper](https://arxiv.org/abs/2511.18463)] [[🤗 Model](https://huggingface.co/)] [[📚 Dataset](https://huggingface.co/)] [[🚀 Demo](https://huggingface.co/spaces/)]
 
 </div>
 
@@ -21,12 +17,14 @@ Bowei Pu<sup>1</sup>, Chuanbin Liu<sup>1</sup>, Yifan Ge<sup>1</sup>, Peichen Zh
 - [ ] Release trained models.
 - [ ] Create a model demo on HuggingFace Spaces.
 - [ ] Release training code (based on ms-swift).
-- [ ] Finding a home for the paper(Accepted by a conference🙏).
+- [ ] Finding a home for the paper (Accepted by a conference 🙏).
 
 ---
 
 ## 📖 Introduction & Advantages
+
 ![VideoPLR Overview](docs/head.png)
+
 Existing Video Large Language Models (VideoLLMs) often suffer from **perception shortcuts** and **hallucinations** due to a flawed single-step perception paradigm. They tend to describe the video once and then reason, leading to insufficient evidence and lost details.
 
 To address this, we introduce **VideoPLR**, a novel framework that integrates a loop-based paradigm with an anti-hallucination reward.
@@ -35,7 +33,6 @@ To address this, we introduce **VideoPLR**, a novel framework that integrates a 
 1.  **Perception Loop Reasoning (PLR) Paradigm:** Unlike traditional "Think-then-Answer" models, VideoPLR explicitly decouples perception and reasoning. The model iteratively perceives video segments, analyzes the evidence, and autonomously decides whether to re-perceive or conclude.
 2.  **Anti-Hallucination Mechanism:** We introduce the **Factual-Aware Evaluator (FAE)**, a reward model that evaluates the consistency between text descriptions and video content to prevent hallucinations during Reinforcement Learning (RL).
 3.  **State-of-the-Art Performance:** VideoPLR achieves SOTA results on 7 benchmarks (including Video-Holmes, MMVU, and VideoMME) at both 3B and 7B parameter scales, demonstrating superior data efficiency.
-
 
 ---
 
@@ -72,10 +69,33 @@ VideoPLR is built upon **Qwen2.5-VL** and trained using **Group Relative Policy 
 * **Accuracy Reward:** Evaluates correctness on tasks like Multiple Choice, Temporal Grounding (IoU), and Open-Ended QA.
 * **Anti-Hallucination Reward:** Uses the **Factual-Aware Evaluator (FAE)** to score the factual accuracy of the generated video descriptions (evidence).
 
-
-
 ---
 
 ## 🛠️ Usage
 
 *Coming Soon*
+
+---
+
+## 🙏 Acknowledgements
+
+We would like to sincerely thank the **ms-swift** team for their excellent training framework.
+
+> **[modelscope/ms-swift](https://github.com/modelscope/ms-swift)**: Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 500+ LLMs (Qwen3, Qwen3-MoE, Llama4, GLM4.5, InternLM3, DeepSeek-R1, ...) and 200+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, Llava, GLM4v, Phi4, ...) (AAAI 2025).
+
+---
+
+## ✏️ Citation
+
+If you find our paper or code useful, please cite:
+
+```bibtex
+@misc{pu2025alternatingperceptionreasoninghallucinationresistantvideo,
+      title={Alternating Perception-Reasoning for Hallucination-Resistant Video Understanding}, 
+      author={Bowei Pu and Chuanbin Liu and Yifan Ge and Peichen Zhou and Yiwei Sun and Zhiyin Lu and Jiankang Wang and Hongtao Xie},
+      year={2025},
+      eprint={2511.18463},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={[https://arxiv.org/abs/2511.18463](https://arxiv.org/abs/2511.18463)}, 
+}
